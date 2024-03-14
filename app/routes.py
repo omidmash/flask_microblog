@@ -169,3 +169,7 @@ def unfollow(username):
     else:
         return redirect(url_for('index'))
 
+
+@app.route('/dragon')
+def dragon():
+    return render_template('dragonRepeller/dragon.html', title='Dragon Repeller')
